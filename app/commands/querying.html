@@ -83,6 +83,24 @@ cy.get('#querying .well>button:first').should('contain', 'Button')
         </div>
         <div class="col-xs-5">
           <div class="well">
+            <!-- findLink -->
+            <a id="link-1" href="#">What a great link!</a>
+            <a id="link-2">
+              <img src="https://www.cypress.io/img/logo-dark.4e8064a6.png"/>
+              <span>I am</span>
+              just some <em>text</em>
+            </a>
+            <!-- findField -->
+            <label for="yes-1">Such a nice field</label>
+            <input name="nice-name" id="yes-1"/>
+            <label for="yes-2">What a textarea</label>
+            <textarea name="meh-name" id="yes-2"></textarea>
+            <label for="yes-3">nice, a dropdown. very cool</label>
+            <select name="ok-name" id="yes-3"><option>1</option></select>
+            <input type="submit" id="no-1"/>
+            <input type="image" id="no-2"/>
+            <input type="hidden" id="no-3"/>
+
             <!-- findButton -->
             <button id="query-btn" class="query-btn btn btn-primary">Button</button>
             <button title="A great button title"  class="btn btn-info">Button "#2"</button>
@@ -91,17 +109,6 @@ cy.get('#querying .well>button:first').should('contain', 'Button')
             <input type="image" alt="an image!" value="Button #5"/>
             <div id="not-a-button" value="Button #6" type="button">Fake Button</div>
             <input type="button"  value="Button #7"/>
-
-            <!-- findField -->
-            <label for="yes-1">Such a nice field</label>
-            <input name="nice-name" id="yes-1"/>
-            <label for="yes-2">What a textarea</label>
-            <textarea name="meh-name" id="yes-2"></textarea>
-            <input type="submit" id="no-1"/>
-            <input type="radio" id="no-2"/>
-            <input type="checkbox" id="no-3"/>
-            <input type="hidden" id="no-4"/>
-            <input type="file" id="no-5"/>
           </div>
         </div>
 

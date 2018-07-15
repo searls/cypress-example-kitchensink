@@ -83,7 +83,25 @@ cy.get('#querying .well>button:first').should('contain', 'Button')
         </div>
         <div class="col-xs-5">
           <div class="well">
+            <!-- findButton -->
             <button id="query-btn" class="query-btn btn btn-primary">Button</button>
+            <button title="A great button title"  class="btn btn-info">Button "#2"</button>
+            <input type="submit" title="]a t[it]le]" value="Button #3"/>
+            <input type="reset" id="lol" value="Button #4"/>
+            <input type="image" alt="an image!" value="Button #5"/>
+            <div id="not-a-button" value="Button #6" type="button">Fake Button</div>
+            <input type="button"  value="Button #7"/>
+
+            <!-- findField -->
+            <label for="yes-1">Such a nice field</label>
+            <input name="nice-name" id="yes-1"/>
+            <label for="yes-2">What a textarea</label>
+            <textarea name="meh-name" id="yes-2"></textarea>
+            <input type="submit" id="no-1"/>
+            <input type="radio" id="no-2"/>
+            <input type="checkbox" id="no-3"/>
+            <input type="hidden" id="no-4"/>
+            <input type="file" id="no-5"/>
           </div>
         </div>
 
